@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+* .non-selectable-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+* .bg-transparent {
+  background: transparent;
+}
+
+body {
+  background: linear-gradient(45deg, #003375, #fffde7);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: 500px;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(8, 61, 57);
+  background-color: #f7f7f7;
+}
+.calculator #display {
+  color: #000;
+  min-height: 50px;
+  font-size: 30px;
+  font-weight: 800;
+  text-wrap: break-word;
+}
+.calculator #calculator-container button {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.calculator #calculator-container button:hover {
+  transform: scale(1.1);
+}
+.calculator #history .history-row {
+  border: 2px solid black;
+}
+.calculator #history button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  font-size: 7.5px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+}
+.calculator #history button:hover {
+  transform: scale(1.05);
+}
+.calculator .clear {
+  background: #ff9ba1;
+  color: rgb(199, 0, 0);
+}
+.calculator .btn-number {
+  background-color: #75cfff;
+  color: #000;
+}
+.calculator .btn-operator {
+  background-color: #ff7af4;
+  color: #000000;
+}
+.calculator .btn-equal {
+  background-color: #6af5d4;
+  color: #000;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+  color: #fff;
+  font-weight: 600;
+}
+.calculator.dark #display {
+  color: #fff;
+}
+.calculator.dark #clear {
+  background-color: #8f4146;
+  color: rgb(255, 255, 255);
+}
+.calculator.dark .btn-number {
+  background-color: #0d3f5a;
+  color: #fff;
+}
+.calculator.dark .btn-operator {
+  background-color: #940d89;
+  color: #ffffff;
+}
+.calculator.dark .btn-equal {
+  background-color: #27836d;
+  color: #ffffff;
+}
+.calculator.dark #history .history-row {
+  border: 2px solid white;
+}
+
+.theme-toggler {
+  color: yellow;
+  cursor: pointer;
+  z-index: 1;
+  background: gray;
+  height: 40px;
+  width: 40px;
+}
+
+#history {
+  width: 100%;
+}
+#history table, #history td, #history th {
+  border: 1px solid black;
+  margin: 0px;
+  padding: 5px;
+  display: block;
+  width: auto;
+}/*# sourceMappingURL=style_exercise_02.css.map */

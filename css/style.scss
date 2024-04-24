@@ -1,0 +1,24 @@
+.frame-container {
+    position: relative;
+    width: 75%;
+    height: 750px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+}
+.frame-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+    object-fit: cover;
+    overflow: hidden;
+}
+.frame-container a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}

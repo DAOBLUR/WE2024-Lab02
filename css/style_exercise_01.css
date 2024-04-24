@@ -1,0 +1,213 @@
+body {
+  background: #F0F0F0 !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  border-top: 10px solid #C61316;
+  box-shadow: 0 6px 3px -2px lightgray;
+}
+
+#title-container #lock-icon {
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -5px;
+  color: #838383;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#container {
+  background: white;
+  width: 750px;
+  border-left: 1px solid #d4d4d4;
+  border-right: 2px solid #CDCDCD;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 2px solid #CDCDCD;
+}
+#container #select-card-container #select-card-form #select-card-value {
+  border: 1px solid #C7C7C7;
+  border-right: 0px;
+  border-radius: 12px 0 0 12px;
+  cursor: pointer;
+}
+#container #select-card-container #select-card-form #select-card-button {
+  background-image: linear-gradient(#C40000, #7A0000);
+  color: white;
+  border-radius: 0 25% 25% 0;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0.15rem !important;
+}
+#container #select-card-container #select-card-list-container #select-card-list {
+  background: #EBEBEB;
+  position: absolute;
+  margin-left: 11.75rem !important;
+  width: 350px;
+}
+#container #select-card-container #select-card-list-container #select-card-list li {
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+#container #select-card-container #select-card-list-container #select-card-list li:hover {
+  text-decoration: underline;
+}
+#container #card-number-container #card-number-input {
+  border: 1px solid #C7C7C7;
+  border-radius: 12px;
+  padding: 2px 10px !important;
+}
+#container #type-number-document-container #type-number-document-form #document-type-value {
+  border: 1px solid #C7C7C7;
+  border-right: 0px;
+  border-radius: 12px 0 0 12px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#container #type-number-document-container #type-number-document-form #document-type-button {
+  background-image: linear-gradient(#C40000, #7A0000);
+  color: white;
+  border-radius: 0 25% 25% 0;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0.15rem !important;
+}
+#container #type-number-document-container #type-number-document-form #card-number-input {
+  border: 1px solid #C7C7C7;
+  border-radius: 12px;
+  padding: 2px 10px !important;
+}
+#container #type-number-document-container #document-type-list-container #document-type-list {
+  background: #EBEBEB;
+  position: absolute;
+  margin-left: 11.75rem !important;
+  width: 150px;
+}
+#container #type-number-document-container #document-type-list-container #document-type-list li {
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+#container #type-number-document-container #document-type-list-container #document-type-list li:hover {
+  text-decoration: underline;
+}
+#container .key {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-image: linear-gradient(#F5F5F5, #D5D5D5);
+  color: #000;
+  font-weight: bold;
+  font-size: x-large;
+}
+#container .key:hover {
+  background-image: linear-gradient(#929292, #595959);
+  color: white;
+}
+#container #clean {
+  height: 40px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-image: linear-gradient(#959595, #555555);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+#container #code-form #generate-password-icon {
+  font-size: x-large;
+  margin-right: 5px;
+}
+#container #code-form #code-form-label-input input {
+  border: 1px solid #C7C7C7;
+  border-radius: 12px;
+  padding: 2px 10px !important;
+}
+#container #code-form #forgot-password-p:hover + #forgot-password-message {
+  display: block;
+}
+#container #code-form #forgot-password-message {
+  position: absolute;
+  background: #000;
+  font-size: x-small;
+  width: 115px;
+  margin-top: 8.5rem !important;
+  margin-left: 10rem !important;
+  z-index: 1;
+  display: none;
+}
+#container #code-form #forgot-password-message::before {
+  content: "";
+  position: absolute;
+  bottom: 25% !important;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #000;
+  border-left: 0;
+  left: -7.5%;
+}
+#container #captcha-container #refresh-captcha-p #refresh-icon {
+  color: #595959;
+  font-weight: bold;
+  font-size: xx-large;
+  transform: rotate(-45deg);
+}
+#container #captcha-container #captcha-input {
+  border: 1px solid #C7C7C7;
+  border-radius: 12px;
+  padding: 2px 10px !important;
+}
+#container #login-button-container {
+  border: 1.25px dashed #C7C7C7;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-left: 0px;
+}
+#container #login-button-container button {
+  background-image: linear-gradient(#C40000, #7A0000);
+  color: white;
+  border: 0px;
+}
+
+footer {
+  background: #F0F0F0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+footer #text-footer {
+  color: #777777;
+}
+
+.non-selectable-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.bg-app {
+  background: #C61316;
+}
+
+.text-color-app {
+  color: #C61316;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.cursor-po {
+  cursor: pointer;
+}/*# sourceMappingURL=style_exercise_01.css.map */

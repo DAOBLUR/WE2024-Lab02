@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman</title>
+        <link rel="stylesheet" href="./css/style_exercise_03.css">
+        <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Hangman</h1>
+        <h3 id="hint">Hint:</h3>
+
+        <div class="canvas-input-container">
+            <div class="division image-container">
+                <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+            </div>
+            <div class="division letters-container">
+                <h3 id="input-label">Input a letter</h3>
+                <input type="text" id="input" maxlength="1">
+                <button type="button" id="restart-button" onclick="Restart()">Continue</button>
+            </div>
+        </div>
+
+        <div id="word-container"></div>
+        <div id="score">Score: 0</div>
+
+        <script src="./js/script_exercise_03.js"></script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    font-family: 'Coming Soon', cursive;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.canvas-input-container{
+    display: flex;
+    align-items: center;
+}
+
+.image-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.letters-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input{
+    border: none;
+    border-bottom: 1px solid #2b99ff;
+    outline: none;
+    width: 50px;
+    text-align: center;
+    font-size: 1.6vw;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+#score{
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin: 30px 60px;
+}
+
+#word-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.letter, .space{
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+}
+
+.letter{
+    border-bottom: 2px solid #2b99ff;
+    padding-bottom: 3px;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missing{
+    color: #c70000;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #2b99ff;
+    border-radius: 25px;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #2b99ff;
+}

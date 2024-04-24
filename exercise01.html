@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style_exercise_01.css">
+        <title>Banco de la Nación</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+
+    <body>
+        <nav class="navbar mt-0 p-0 pb-3 bg-white">
+            <div class="container-fluid py-0 mx-5 my-0">
+                <img src="./img/multired-virtual-logo.png" alt="Logo" width="275" height="75" class="d-inline-block align-text-top">
+                <img src="./img/banco-nacion-logo.png" alt="Logo" width="225" height="50" class="d-inline-block align-text-top">
+            </div>
+        </nav>
+
+        <hr class="m-0 p-0">
+
+        <!--TITLE-->
+        <div class="text-center" id="title-container">
+            <h2 class="m-5">
+                <span class="material-symbols-outlined non-selectable-text" id="lock-icon">lock</span>
+                Usted se encuentra en una
+                <span class="text-color-app">zona segura</span>
+            </h2>
+        </div>
+
+        <div class="row mx-auto pt-5 pb-4 mb-5 rounded-3" id="container">
+
+            <!--CARD SELECT-->
+            <div class="col-10 row mx-auto m-0 mb-4 p-0" id="select-card-container">
+                <div class="row justify-content-center" id="select-card-form">
+                    <p class="col-4 m-0 p-0 pe-2 text-end">Seleccione:</p>
+
+                    <p class="col-7 m-0 py-0 px-3 text-start non-selectable-text" id="select-card-value">Multired Global Débito</p>
+
+                    <div class="col-1 p-0 m-0">
+                        <span class="m-0 p-0 non-selectable-text material-symbols-outlined" id="select-card-button">arrow_drop_down</span>
+                    </div>
+                </div>
+
+                <div class="justify-content-center" id="select-card-list-container">
+                    <div class="border border-1 p-1" id="select-card-list">
+                        <ul class="m-0 p-0">
+                            <li class="non-selectable-text text-start ps-3 py-1 list-item-card">Multired Global Débito</li>
+                            <li class="non-selectable-text text-start ps-3 py-1 list-item-card">Multired Global Crédito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARD NUMBER-->
+            <div class="col-10 row mx-auto m-0 mb-4 p-0" id="card-number-container">
+                <div class="row justify-content-center">
+                    <label for="card-number-input" class="col-4 m-0 p-0 pe-2 text-end">Número de tarjeta:</label>
+
+                    <input type="text" name="cardNumberInput" id="card-number-input" class="col-8 m-0 p-0" maxlength="16" onkeypress="return CardNumberValidator(event)">
+                </div>
+            </div>
+
+            <!--DOCUMENT TYPE AND NUMBER-->
+            <div class="col-10 row mx-auto m-0 mb-4 p-0" id="type-number-document-container">
+                <div class="row justify-content-center" id="type-number-document-form">
+                    <p class="col-4 m-0 p-0 pe-2 text-end">Tipo y Nº de Documento:</p>
+
+                    <p class="col-3 m-0 py-0 px-3 text-start non-selectable-text" id="document-type-value">DNI</p>
+
+                    <div class="col-1 p-0 m-0">
+                        <span class="m-0 p-0 non-selectable-text material-symbols-outlined" id="document-type-button">arrow_drop_down</span>
+                    </div>
+
+                    <input type="text" name="cardNumberInput" id="doc-number-input" class="col-4 m-0 p-0" maxlength="12">
+                </div>
+
+                <div class="justify-content-center" id="document-type-list-container">
+                    <div class="border border-1 p-1" id="document-type-list">
+                        <ul class="m-0 p-0">
+                            <li class="non-selectable-text text-start ps-3 py-1 list-item-doc">DNI</li>
+                            <li class="non-selectable-text text-start ps-3 py-1 list-item-doc">CARNET DE EXTRANJERIA</li>
+                            <li class="non-selectable-text text-start ps-3 py-1 list-item-doc">RUC</li>
+                            <li class="non-selectable-text text-start ps-3 py-1 list-item-doc">PASAPORTE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--VIRTUAL KEYBOARD-->
+            <div class="col-10 row mx-auto m-0 mb-5 p-0" id="type-number-document-container">
+                <div class="row mx-auto justify-content-center" id="type-number-document-form">
+                    <p class="col-4 m-0 p-0 pe-2 pt-2 text-end">Ingresa tu clave usando el teclado virtual:</p>
+
+                    <div class="col-3 row p-0 m-0 non-selectable-text">
+                        <div class="row p-0 mx-auto my-0">
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                        </div>
+
+                        <div class="row p-0 mx-auto my-0">
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                        </div>
+
+                        <div class="row p-0 mx-auto my-0">
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                        </div>
+
+                        <div class="row p-0 mx-auto my-0">
+                            <div class="col-4 m-0 p-0"><div class="mx-auto my-1 rounded-3 key"></div></div>
+                            <div class="col-8 m-0 px-1 py-0"><div class="mx-auto my-1 rounded-3" id="clean">LIMPIAR</div></div>
+                        </div>
+                    </div>
+
+                    <div class="col-5 row p-0 ps-3 m-0" id="code-form">
+                        <div class="m-0 p-0 text-start row mb-2">
+                            <span class="col-1 material-symbols-outlined bg-warning text-white p-0 pe-4 rounded-5 my-auto non-selectable-text" id="generate-password-icon">apps</span>
+                            <a href="https://bancaporinternet.bn.com.pe/BNWeb/Afiliacion" class="col p-0 m-0 my-auto text-color-app">Genera tu clave de internet</a>
+                        </div>
+                        
+                        <div class="m-0 p-0 ps-4 mb-3" id="code-form-label-input">
+                            <label for="code-input" class="m-0 p-0 ps-1 mb-3">Ingresa tu clave de internet (06 dígitos)</label>
+                            <input type="password" name="code-input" id="code-input" maxlength="4">
+                        </div>
+                        
+                        <p class="m-0 p-0 text-start" id="forgot-password-p">
+                            <span class="m-0 my-auto p-1 material-symbols-outlined align-middle text-white bg-app rounded-5 cursor-po non-selectable-text">priority_high</span>
+                            <span class="m-0 my-auto p-0 align-middle text-color-app underline cursor-po">Olvidé mi clave</span>
+
+                            <div id="forgot-password-message" class="text-white text-center p-0 m-0">
+                                Acérquese a cualquiera de nuestras oficinas a nivel nacional.
+                            </div>
+                        </p>  
+                    </div>
+                </div>
+            </div>
+
+            <!--CAPTCHA-->
+            <div class="col-10 row mx-auto m-0 mb-4 p-0" id="captcha-container">
+                <p class="col-4 m-0 p-0 pe-2 text-end">Ingresa el texto de la imagen:</p>
+
+                <div class="col-4 row m-0 py-0 px-3 text-start non-selectable-text" id="captcha-image-container">
+                    <img  alt="captcha" id="captcha-image">
+                    
+                    <p class="m-0 p-0 mt-1 text-start" id="refresh-captcha-p">
+                        <span class="m-0 my-auto p-0 material-symbols-outlined align-middle cursor-po" id="refresh-icon">refresh</span>
+                        <span class="m-0 my-auto p-0 align-middle text-color-app underline cursor-po" id="refresh-label">Cambiar texto</span>
+                    </p>  
+                </div>
+
+                <input type="text" name="cardNumberInput" id="captcha-input" class="col-4 m-0 mb-5 p-0" maxlength="5">
+            </div>
+
+            <!--LOGIN-->
+            <div class="row m-0 pt-4 p-0" id="login-button-container">
+                <button type="button" class="col-2 rounded-3 mx-auto p-1">
+                    INGRESAR
+                </button>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5">
+            <p>Banco de la Nación | Ministerio de Economía y Finanzas</p>
+            <p class="m-0" id="text-footer">
+                Oficina Principal: Av. Javier Prado Este 2499. San Borja. Central Telefónica: 519 2000.
+                <br>
+                Atención en Oficinas  Administrativas: Lunes a Viernes de 08:30 a 17:30. Refrigerio de: 13:00-14:00.
+                <br>
+                Atención en Oficina de Trámite Documentario: Lunes a Viernes de 8:30 a 16:30 (horario corrido).
+            </p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./js/script_exercise_01.js"></script>
+    </body>
+</html>
